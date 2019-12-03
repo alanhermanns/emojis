@@ -54,19 +54,9 @@ Once you have a good visual and mental model of how the application works, break
    * contains settings for styleguide docs (For React Only)
 
 ### Canvas Submission
-* Copy the README-template.md file from the reference/submission-instructions folder, rename it to `README.md` and include it in your lab repository in the root folder
-* README must include the live (deployed) URLs to your 
-   * **running server** (Deployed URL)
-     * Heroku for express apps
-     * Code Sandbox for React daily labs
-     * Netlify, AWS, or Azure for React projects
-   * **API Documentation** (swagger/blueprint)
-   * **JSDoc** (express labs)
-   * **Style Guide Doc** (React labs)
-* README should contain link to open PR on submission branch
 * Keep submission branch PR open in case of resubmit
 * Do NOT merge to master
-* Submit a Link to this README.md 
+* Submit a Link to the PR
 
 ### Resubmits
 * Any commits made to submission branch will be updated in the PR
