@@ -49,10 +49,10 @@ Your folder structure should look like this:
     |__ docs
     |
     ├── challenges
-    │   └── challenge-01
+    │   └── arrayReverse
     │       ├── __tests__
-    │       │   └── something.test.js
-    │       └── something.js
+    │       │   └── array-reverse.test.js
+    │       └── array-reverse.js
     └── linked-lists
         ├── __tests__
         │   └── linked-lists.test.js
