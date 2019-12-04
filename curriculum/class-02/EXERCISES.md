@@ -24,8 +24,8 @@ const ryansColors = new Colors();
 ryansColors.addColor('red');
 ryansColors.addColor('blue');
 
-ryansColors.hasColor('blue');
-ryansColors.hasColor('green')
+ryansColors.hasColor('blue'); // true
+ryansColors.hasColor('green'); // false
 ```
 
 * Create a `Colors` class

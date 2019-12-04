@@ -4,14 +4,13 @@ Below is a collection of resources of varying types and lengths which describe t
 
 ## Read
 
-[data modeling](https://www.guru99.com/data-modelling-conceptual-logical.html)
-[what is data modeling](https://www.dataversity.net/what-is-data-modeling/)
-[What is mongodb?](https://www.mongodb.com/what-is-mongodb)
-[Documents](https://docs.mongodb.com/manual/core/document/)
+[data modeling](https://www.guru99.com/data-modelling-conceptual-logical.html){:target="_blank"}
+[what is data modeling](https://www.dataversity.net/what-is-data-modeling/){:target="_blank"}
+[What is mongodb?](https://www.mongodb.com/what-is-mongodb){:target="_blank"}
+[Documents](https://docs.mongodb.com/manual/core/document/){:target="_blank"}
 
 ## Skim
 
 ## Watch
 
 ## Bookmark
-

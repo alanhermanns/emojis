@@ -106,11 +106,11 @@ in a different order each time
 
 ### Model class
 
-* `create`
-* `findById`
-* `find`
-* `findByIdAndUpdate`
-* `findByIdAndDelete`
+* `create` - `writeJSON`
+* `findById` - `readJSON`
+* `find` - `readDirectoryJSON`
+* `findByIdAndUpdate` - `updateJSON`
+* `findByIdAndDelete` - `deleteFile`
 
 ```js
 const dogSchema = new Schema({
@@ -185,4 +185,3 @@ const randomId = uuid();
 ## Assignment Submission Instructions
 
 Refer to the the [lab submission instructions](../../../reference/submission-instructions/labs/README.md) for the complete lab submission process and expectations
-
