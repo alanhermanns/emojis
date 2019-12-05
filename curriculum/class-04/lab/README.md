@@ -22,13 +22,6 @@ Refer to *Getting Started*  in the [lab submission instructions](../../../refere
   * An `InventoryItem` model
   * A `Joke` model
 
-### Seed Data
-
-Seed a mongo database with data.
-
-* write a `seedData` function
-* create a `seed.js` file and an `npm` script to run that file
-
 ## Rubric
 
 * 5 points for models
@@ -37,4 +30,3 @@ Seed a mongo database with data.
 ## Assignment Submission Instructions
 
 Refer to the the [lab submission instructions](../../../reference/submission-instructions/labs/README.md) for the complete lab submission process and expectations
-
