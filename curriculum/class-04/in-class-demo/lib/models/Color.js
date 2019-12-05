@@ -13,11 +13,15 @@ const schema = new mongoose.Schema({
   },
   green: {
     type: Number,
-    required: true
+    required: true,
+    min: 0,
+    max: 255
   },
   blue: {
     type: Number,
-    required: true
+    required: true,
+    min: 0,
+    max: 255
   }
 });
 
