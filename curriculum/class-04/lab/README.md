@@ -24,8 +24,7 @@ Refer to *Getting Started*  in the [lab submission instructions](../../../refere
 
 ## Rubric
 
-* 5 points for models
-* 5 points for seed data
+* 10 points for models
 
 ## Assignment Submission Instructions
 
