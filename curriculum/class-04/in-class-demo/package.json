@@ -7,6 +7,9 @@
     "test": "jest --verbose",
     "test:watch": "npm run test -- --watchAll --coverage"
   },
+  "jest": {
+    "testEnvironment": "node"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

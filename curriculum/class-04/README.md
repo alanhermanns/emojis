@@ -33,8 +33,7 @@ A database is a collection of related data.
 
 * Databases hold collections
 * Collections hold documents
-* Documents hold data
-
+* Document hold data
 
 ## Mongoose
 
@@ -49,16 +48,16 @@ the fields and types that each document should have with a
 provided object DSL (Domain Specific Language). The supported
 types are:
 
-* String
-* Number
-* Date
-* Boolean
-* ObjectId
-* Buffer
-* Mixed
-* Array
+* String - VARCHAR or TEXT
+* Number - INT BIGINT
+* Date - DATE or DATETIME
+* Boolean - BOOLEAN
+* ObjectId - SERIAL or BIGSERIAL
+* Array - [INT]
   * { type: [String] } **DONT** { type: Array }
-* Decimal128
+* Buffer - BYTE
+* Mixed
+* Decimal128 - DOUBLE PRECISION
 * Map
 
 ### Validators
