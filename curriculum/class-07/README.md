@@ -33,17 +33,17 @@ to follow while constructing our APIs.
 1. uniform interface
 1. layered system
 
-* `POST /<resource>`
+* `POST /<resource>` - Create
   * create a new resource
-* `GET /<resource>`
+* `GET /<resource>` - READ ALL
   * get a list of resource
-* `GET /<resource>/:id`
+* `GET /<resource>/:id` - READ ONE
   * get a resource by id
-* `PUT /<resource>/:id`
+* `PUT /<resource>/:id` - UPDATE IN WHOLE
   * update a resource by id
-* `PATCH /<resource>/:id`
+* `PATCH /<resource>/:id` - UPDATE IN PART
  * partially update a resource by id
-* `DELETE /<resource>/:id`
+* `DELETE /<resource>/:id` DELETE ONE
   * delete a resource by id
 
 ## Express Methods
@@ -51,6 +51,7 @@ to follow while constructing our APIs.
 Different HTTP methods can be handled by express.
 
 ```js
+// .METHOD('/path', requestHandler)
 app.post('/my/path', (req, res) => {});
 app.get('/my/path', (req, res) => {});
 app.put('/my/path', (req, res) => {});

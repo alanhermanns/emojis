@@ -31,8 +31,8 @@ To help promote cleaner code, refactor your routes into a `lib/routes/recipes` f
 
 ### Add a second model (1 point)
 
-Add an `Event` model which tracks when you used a recipe. An `Event` has: `recipeId`, `dateOfEvent`,
-`notes`, and `rating`. Create all CRUD routes for your `Event` model
+Add an `Attempt` model which tracks when you used a recipe. An `Attempt` has: `recipeId`, `dateOfEvent`,
+`notes`, and `rating`. Create all CRUD routes for your `Attempt` model
 
 ## Assignment Submission Instructions
 Refer to the the [lab submission instructions](../../../reference/submission-instructions/labs/README.md) for the complete lab submission process and expectations
