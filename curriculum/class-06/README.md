@@ -262,7 +262,7 @@ HTTP/1.1 200 OK
 Date: Sat, 09 Oct 2010 14:28:02 GMT
 Accept-Ranges: bytes
 Content-Length: 269
-Content-Type: application/json
+Content-Type: text/html
 
 <!DOCTYPE html>
 <html lang="en">
