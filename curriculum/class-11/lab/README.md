@@ -24,7 +24,7 @@ an itinerary item.
 Fetch the weather from [MetaWeather](https://www.metaweather.com/api/).
 You should be able to see the weather forecast for your itinerary items.
 
-**RECOMMENDATION**
+**RECOMMENDATION**`
 
 * use middleware to get the woeid based on latitude/longitude and store
   the woeid with your itinerary item
