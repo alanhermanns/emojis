@@ -12,7 +12,7 @@ Refer to *Getting Started*  in the [lab submission instructions](../../../refere
 ### Write a seed data script
 
 Create a script that can seed your database. Use your script to seed
-your database before your tests.
+your database before your tests (if not too large).
 
 ### Write CRUD routes for a model
 
