@@ -26,6 +26,8 @@ A user should be able to verify that they have signed in already.
   in order to create, update, or delete a document.
 1. Create a simple front-end that allows a user to signup/login
   to your application
+1. Write a brute force script that searches through a list of
+  the most common passwords.
 
 ## Assignment Submission Instructions
 
