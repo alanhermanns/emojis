@@ -263,6 +263,8 @@ Date: Sat, 09 Oct 2010 14:28:02 GMT
 Accept-Ranges: bytes
 Content-Length: 269
 Content-Type: text/html
+Set-Cookie: session=oenthueonthueotnhutneohutneohuneo
+Set-Cookie: otherCookie=outhuntoheunteohuneohtnu
 
 <!DOCTYPE html>
 <html lang="en">
