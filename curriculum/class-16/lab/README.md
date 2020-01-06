@@ -6,15 +6,10 @@ For this assignment, you'll be creating a database of movie films (with reviews)
 
 ## Working on this Lab
 
-This is a pair (group) exercise. Use **20 minute** intervals with a couple minutes between to switch using git push and pull.
-
-You **must** use a timer and **switch religiously between your computers at each interval**.
-
 You **cannot** pass this lab without a commit history that indicates normal back-and-forth pairing.
 
 ### Setup
 
-1. Create a GitHub org for your pair and make sure devs are admins
 1. Create a `ripe-banana` repository
 1. Reuse boilerplate files to get baseline functionality ASAP
 
@@ -217,9 +212,8 @@ Only Reviewers can be updated.
 
 #### DELETE
 
-Studio, Films, and Actors can be deleted. **However**:
-1. Studios cannot be deleted if there are films from those studios
-1. Actors cannot be deleted who are in films.
+Reviews and Reviewers **However**:
+1. Reviewers cannot be deleted if there are reviews
 
 ## Testing
 
@@ -231,8 +225,6 @@ Studio, Films, and Actors can be deleted. **However**:
 Deploy to heroku
 
 ## Rubric:
-
-No evidence of active pairing in commits is **-15pts**;
 
 * Models: 5pts
 * Relationships: 5pts
