@@ -1,9 +1,15 @@
 const chance = require('chance').Chance();
+const User = require('../models/User');
 const Location = require('../models/Location');
 const Box = require('../models/Box');
 const Item = require('../models/Item');
 
 module.exports = async({ location = 10, boxes = 50, items = 100 } = {}) => {
+  await User.create([...Array(1)].map((_, i) => ({
+    email: `test${i}@test.com`,
+    password: 'password'
+  })));
+
   const locations = await Location.create([...Array(location)].map(() => ({
     name: chance.name(),
     description: chance.sentence()

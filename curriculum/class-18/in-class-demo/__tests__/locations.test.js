@@ -1,4 +1,4 @@
-const { getLocation, getLocations } = require('../lib/helpers/data-helpers');
+const { getLocation, getLocations, getAgent } = require('../lib/helpers/data-helpers');
 
 const request = require('supertest');
 const app = require('../lib/app');
@@ -21,7 +21,7 @@ describe('app routes', () => {
   it('can get all locations via GET', async() => {
     const locations = await getLocations();
 
-    return request(app)
+    return getAgent()
       .get('/api/v1/locations')
       .then(res => {
         expect(res.body).toHaveLength(locations.length);

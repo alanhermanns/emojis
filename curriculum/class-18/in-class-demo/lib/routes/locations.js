@@ -1,8 +1,9 @@
 const { Router } = require('express');
+const ensureAuth = require('../middleware/ensure-auth');
 const Location = require('../models/Location');
 
 module.exports = Router()
-  .post('/', (req, res, next) => {
+  .post('/', ensureAuth, (req, res, next) => {
     Location
       .create(req.body)
       .then(location => res.send(location))
@@ -23,14 +24,14 @@ module.exports = Router()
       .catch(next);
   })
 
-  .patch('/:id', (req, res, next) => {
+  .patch('/:id', ensureAuth, (req, res, next) => {
     Location
       .findByIdAndUpdate(req.params.id, req.body, { new: true })
       .then(location => res.send(location))
       .catch(next);
   })
 
-  .delete('/:id', (req, res, next) => {
+  .delete('/:id', ensureAuth, (req, res, next) => {
     Location
       .findByIdAndRemove(req.params.id)
       .then(location => res.send(location))
