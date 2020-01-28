@@ -1,0 +1,7 @@
+.my-good-class {
+  color: yellow;
+
+  span {
+    color: blue;
+  }
+}

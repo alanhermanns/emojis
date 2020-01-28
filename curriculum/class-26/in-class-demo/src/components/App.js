@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Dog from './Dog';
 
-export default function App() {
-  return (
-    <h1>Welcome</h1>
-  )
+// const dog = new Dog({ name: 'spot' });
+
+export default class App extends Component {
+  render() {
+    return (
+      <>
+        <h1>My Dog Spot</h1>
+        <Dog name="Spot" age={5} />
+        <Dog name="Rover" age={10} weight="50 lbs" />
+      </>
+    );
+  }
 }

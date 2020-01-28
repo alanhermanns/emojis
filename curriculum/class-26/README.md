@@ -2,7 +2,7 @@
 
 ## Agenda
 
-*  Promises
+* Promises
   * states
     * `pending`
     * `fulfilled`
@@ -10,11 +10,13 @@
   * Static Methods
     * `race`
     * `all`
+    * `allSettled`
     * `resolve`
     * `reject`
   * Instance methods
     * `then`
     * `catch`
+    * `finally`
 * Single Page Apps (SPA)
   * One HTML file
   * Changes to the view are handled by JavaScript
