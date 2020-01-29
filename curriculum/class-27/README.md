@@ -73,7 +73,7 @@ state and provide that state to other components.
 
 As a rule of thumb, presentational components are stateless
 functional components which deal with how things look. They
-are passed props that what they display.
+are passed props that they display.
 
 ## React Testing
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import Madlib from './madlib/Madlib';
+import Madlib from '../containers/Madlib';
 
 export default function App() {
   return <Madlib />;

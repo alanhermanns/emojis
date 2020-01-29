@@ -11,6 +11,7 @@ export default class Dog extends Component {
   }
 
   render() {
+    // this.props === { name, age, weight }
     const { name, age, weight } = this.props;
     return (
       <>
