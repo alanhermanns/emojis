@@ -1,11 +1,11 @@
 # React: List and Async
 
 * forms
-  * `HabitForm` and `CreateHabit` container with name, description, max
+  * `HabitTracker` container
+  * `HabitForm` with name, description, max
     * with one handler per state
     * with an abstract handler
     * dealing with numbers
-  * `HabitTracker` container
 * list
   * `Habit` and `Habits` list
   * `Quote` and `Quotes` list
