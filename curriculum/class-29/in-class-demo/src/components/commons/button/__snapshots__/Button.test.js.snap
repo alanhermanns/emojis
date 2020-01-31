@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component match a snapshot 1`] = `
+<button>
+  My Button
+</button>
+`;
+
+exports[`Button component match a snapshot with type prop passed 1`] = `
+<button
+  type="button"
+>
+  My Button
+</button>
+`;

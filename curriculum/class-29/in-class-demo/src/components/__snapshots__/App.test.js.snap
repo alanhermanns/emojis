@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component renders App 1`] = `
+<RadioButtons
+  name="colors"
+  onChange={[Function]}
+  radioButtons={
+    Array [
+      Object {
+        "label": "Red",
+        "value": "red",
+      },
+      Object {
+        "label": "Blue",
+        "value": "blue",
+      },
+      Object {
+        "label": "Yellow",
+        "value": "yellow",
+      },
+    ]
+  }
+/>
+`;
