@@ -70,5 +70,10 @@ export default function App() {
   //   </>
   // );
 
-  return <ThisDayFn />;
+  return (
+    <>
+      <ThisDayFn />
+      <ThisDay />
+    </>
+  );
 }
