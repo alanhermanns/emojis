@@ -1,0 +1,21 @@
+.Loading {
+  /* width: fit-content; */
+  animation: spin 2s linear infinite;
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0);
+      color: blue;
+    }
+
+    10% {
+      transform: rotate(240deg);
+      color: yellow;
+    }
+
+    100% {
+      transform: rotate(360deg);
+      color: red;
+    }
+  }
+}
