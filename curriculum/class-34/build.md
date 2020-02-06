@@ -1,4 +1,4 @@
-# React Quiz
+# React Build
 
 Create a `NameTag` application.
 
