@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component renders App 1`] = `
+<Fragment>
+  <h1>
+    Name Tag
+  </h1>
+  <h2>
+    Container class
+  </h2>
+  <NameTag />
+  <h2>
+    Container function
+  </h2>
+  <NameTagFn />
+  <h2>
+    custom hook
+  </h2>
+  <NameTagHook />
+</Fragment>
+`;
