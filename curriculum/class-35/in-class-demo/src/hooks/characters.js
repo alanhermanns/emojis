@@ -1,17 +1,41 @@
-import { useState, useEffect } from 'react';
+import React, { createContext, useState, useEffect, useContext } from 'react';
 import { getCharacters } from '../services/rickAndMorty';
 
+const suspenseWrapper = promiseFn => () => {
+  let status = 'pending';
+  let results = null;
+
+  const suspender = promiseFn()
+    .then(promiseResults => {
+      status = 'resolved';
+      results = promiseResults;
+    })
+    .catch(err => {
+      status = 'rejected';
+      results = err;
+    });
+
+  const read = () => {
+    if(status === 'pending') throw suspender;
+    if(status === 'resolved') return results;
+    if(status === 'rejected') throw results;
+  };
+
+  return { read };
+};
+
+const characterSuspender = suspenseWrapper(getCharacters)();
+
+const CharacterContext = createContext();
+
+export const CharacterProvider = ({ children }) => {
+  return (
+    <CharacterContext.Provider value={characterSuspender.read()}>
+      {children}
+    </CharacterContext.Provider>
+  );
+};
+
 export const useCharacters = () => {
-  const [characters, setCharacters] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    getCharacters()
-      .then(setCharacters)
-      .catch(setError)
-      .finally(setLoading.bind(null, false));
-  }, []);
-
-  return { characters, loading, error };
+  return useContext(CharacterContext);
 };

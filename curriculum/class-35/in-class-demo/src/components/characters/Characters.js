@@ -2,10 +2,8 @@ import React from 'react';
 import { useCharacters } from '../../hooks/characters';
 
 export default function Characters() {
-  const { characters, loading, error } = useCharacters();
-  if(loading) return <h1>Loading</h1>;
-  if(error) return <h1>Error</h1>;
-
+  const characters = useCharacters();
+  
   const characterElements = characters.map(character => (
     <li key={character.id}>
       <p>{character.name}</p>
@@ -13,10 +11,8 @@ export default function Characters() {
   ));
 
   return (
-    <>
-      <ul>
-        {characterElements}
-      </ul>
-    </>
+    <ul>
+      {characterElements}
+    </ul>
   );
 }
