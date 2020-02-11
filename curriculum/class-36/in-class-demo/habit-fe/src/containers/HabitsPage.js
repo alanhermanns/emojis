@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Habits from '../components/habits/Habits';
-import { getHabits } from '../services/habitsApi';
+import { getHabits, postHabit } from '../services/habitsApi';
+import HabitForm from '../components/habits/HabitForm';
 
 export default class HabitsPage extends Component {
   static propTypes = {
@@ -28,6 +29,13 @@ export default class HabitsPage extends Component {
   fetchHabits = () => {
     getHabits(this.currentPage())
       .then(habits => this.setState({ habits }));
+  }
+
+  createHabit = (title, description, goal) => {
+    postHabit({ title, description, goal })
+      .then(habit => this.setState(prevState => ({
+        habits: [habit, ...prevState.habits]
+      })));
   }
 
   componentDidMount() {
@@ -63,6 +71,7 @@ export default class HabitsPage extends Component {
     const { habits } = this.state;
     return (
       <>
+        <HabitForm submitHabit={this.createHabit} />
         <button onClick={this.previousPage}>Previous</button>
         <button onClick={this.nextPage}>Next</button>
         <Habits habits={habits} />

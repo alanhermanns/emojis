@@ -1,11 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Habit from './Habit';
+import { Link } from 'react-router-dom';
 
 const Habits = ({ habits }) => {
   const habitElements = habits.map(habit => (
-    <li key={habit.id}>
-      <Habit {...habit} />
+    <li key={habit._id}>
+      <Link to={`/habit/${habit._id}`}>
+        <Habit {...habit} />
+      </Link>
     </li>
   ));
 

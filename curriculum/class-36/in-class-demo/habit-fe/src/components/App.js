@@ -5,12 +5,14 @@ import {
   Route
 } from 'react-router-dom';
 import HabitsPage from '../containers/HabitsPage';
+import HabitDetailPage from '../containers/HabitDetailPage';
 
 export default function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/" component={HabitsPage} />
+        <Route exact path="/" component={HabitsPage} />
+        <Route path="/habit/:id" component={HabitDetailPage} />
       </Switch>
     </Router>
   );
