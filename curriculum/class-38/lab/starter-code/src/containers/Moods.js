@@ -7,26 +7,12 @@ import {
   eatSnack,
   takeNap,
   study } from '../action/actions';
+import { getFace } from '../selectors/selector'; 
 
 let verbs;
 
 verbs = [drinkCoffee, eatSnack, takeNap, study];
-
-const isTired = state => state.coffees < 1 && state.naps < 1;
-const isHyper = state => state.coffees > 3;
-const isEducated = state => state.studies > 2;
-const isHungry = state => state.snacks < 1;
   
-const getFace = state => {
-  if(isTired(state) && isHungry(state)) return '😠';
-  if(isHyper(state) && isHungry(state)) return '😱';
-  if(isTired(state)) return '😴';
-  if(isHyper(state)) return '🙀';
-  if(isEducated(state)) return '😲';
-  if(isHungry(state)) return '😡';
-    
-  return '😀';
-};
   
 const Moods = () => {
   
