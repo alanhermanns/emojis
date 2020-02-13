@@ -3,30 +3,33 @@
 exports[`Moods container matches a snapshot 1`] = `
 <Fragment>
   <Controls
-    actions={
+    handlers={
       Array [
-        Object {
-          "name": "DRINK_COFFEE",
-          "text": "Drink Coffee",
-        },
-        Object {
-          "name": "EAT_SNACK",
-          "text": "Snack",
-        },
-        Object {
-          "name": "TAKE_NAP",
-          "text": "Nap",
-        },
-        Object {
-          "name": "STUDY",
-          "text": "Study",
-        },
+        Array [
+          "coffees",
+          [Function],
+          0,
+        ],
+        Array [
+          "snacks",
+          [Function],
+          0,
+        ],
+        Array [
+          "naps",
+          [Function],
+          0,
+        ],
+        Array [
+          "study",
+          [Function],
+          0,
+        ],
       ]
     }
-    handleSelection={[Function]}
   />
   <Face
-    emoji="🤬"
+    emoji="😠"
   />
 </Fragment>
 `;
