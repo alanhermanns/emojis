@@ -10,6 +10,7 @@ export const getFace = state => {
   if(isHyper(state)) return '🙀';
   if(isEducated(state)) return '😲';
   if(isHungry(state)) return '😡';
+  if(isHyper(state) && isTired(state)) return ' 🤪';
   
   return '😀';
 };
